@@ -9,7 +9,16 @@ export const PageSpain = () => {
   return (
     <div className="pageSpain">
       <p>Welcome to the Spain page.</p>
-      <h3>we want to show city {id}.</h3>
+
+      <p className="cityChoices">There are {cities.length} cities to visit:</p>
+      <p className="cities">
+        {cities.map((c) => (
+          <div className="city">
+            <div className="name">{c.name}</div>
+            <div className="description">{c.description}</div>
+          </div>
+        ))}
+      </p>
     </div>
   );
 };

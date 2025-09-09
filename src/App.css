@@ -59,8 +59,23 @@ body {
   }
 
   .pageSpain {
-    h3 {
-      margin-top: 0.5rem;
+    .cityChoices {
+      margin-top: 1rem;
+    }
+
+    .city {
+      background-color: #555;
+      margin: 1rem 0;
+      padding: 1rem;
+
+      .name {
+        margin-bottom: 0.5rem;
+        color: aqua;
+      }
+
+      .description {
+        color: tomato;
+      }
     }
   }
 }
