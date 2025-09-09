@@ -27,7 +27,8 @@ function App() {
         <Route path="germany/*" element={<PageGermany />}></Route>
         <Route path="france/*" element={<PageFrance />}></Route>
         <Route path="spain" element={<PageSpain />}>
-          <Route path=":id" element={<PageCity />}></Route>
+          {/* <Route path=":id" element={<PageCity />}></Route> */}
+          <Route path=":idCode" element={<PageCity />}></Route>
         </Route>
         <Route path="/" element={<PageStart />}></Route>
         <Route path="*" element={<Page404 />}></Route>

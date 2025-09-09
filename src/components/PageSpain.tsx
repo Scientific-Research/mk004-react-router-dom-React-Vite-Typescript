@@ -2,9 +2,10 @@ import { NavLink, Outlet, useParams } from 'react-router-dom';
 import cities from '../data/spanishCities.json';
 
 export const PageSpain = () => {
-  const { id } = useParams();
+  const { idCode } = useParams();
 
-  const city = cities.find((c) => Number(c.id) === Number(id));
+  // const city = cities.find((c) => Number(c.id) === Number(id));
+  const city = cities.find((c) => String(c.idCode) === String(idCode));
   console.log(city);
 
   // console.log(id);
@@ -18,7 +19,7 @@ export const PageSpain = () => {
         {cities.map((c) => (
           <div className="city" key={c.id}>
             <div className="name">
-              <NavLink to={`${c.id}`}>{c.name}</NavLink>
+              <NavLink to={`${c.idCode}`}>{c.name}</NavLink>
             </div>
             <div className="description">{c.description}</div>
           </div>
