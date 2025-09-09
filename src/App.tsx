@@ -5,6 +5,7 @@ import { PageGermany } from './components/PageGermany';
 import { PageFrance } from './components/PageFrance';
 import { PageSpain } from './components/PageSpain';
 import { PageStart } from './components/PageStart';
+import { Page404 } from './components/Page404';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="france/*" element={<PageFrance />}></Route>
         <Route path="spain" element={<PageSpain />}></Route>
         <Route path="/" element={<PageStart />}></Route>
+        <Route path="*" element={<Page404 />}></Route>
         {/* <Route path="/" element={<PageGermany />}></Route> OR the following for the default page => even without replace*/}
 
         {/* <Route path="/" element={<Navigate to="france" />}></Route> */}
