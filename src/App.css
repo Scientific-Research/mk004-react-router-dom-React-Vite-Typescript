@@ -12,16 +12,15 @@ body {
   color: #fff;
 
   h1 {
-    color: yellow;
-    margin: 1rem 0;
+    a {
+      margin: 1rem 0;
+      color: rgb(240, 240, 64);
+      text-decoration: none;
+    }
   }
 
   .paragraphWelcome {
     margin: 1rem 0;
-  }
-
-  a {
-    color: rgb(172, 202, 114);
   }
 
   nav {
