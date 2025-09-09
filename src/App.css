@@ -37,4 +37,11 @@ body {
       color: rgb(211, 211, 110);
     }
   }
+
+  .pageStart {
+    img {
+      margin-top: 1rem;
+      width: 500px;
+    }
+  }
 }
