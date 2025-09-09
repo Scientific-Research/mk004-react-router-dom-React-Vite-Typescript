@@ -16,6 +16,14 @@ body {
     margin: 1rem 0;
   }
 
+  .paragraphWelcome {
+    margin: 1rem 0;
+  }
+
+  a {
+    color: rgb(172, 202, 114);
+  }
+
   nav {
     background-color: #222;
     padding: 0.5rem;
