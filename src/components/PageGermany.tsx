@@ -17,7 +17,7 @@ export const PageGermany = () => {
       <Routes>
         <Route path="hamburg" element={<PageHamburg />}></Route>
         <Route path="hannover" element={<PageHannover />}></Route>
-        <Route path="berlin" element={<PageBerlin />}></Route>
+        <Route path="berlin/*" element={<PageBerlin />}></Route>
         {/* <Route path="/" element={<PageGermany />}></Route> OR the following for the default page => even without replace*/}
         <Route path="/" element={<Navigate to="berlin" />}></Route>
       </Routes>
