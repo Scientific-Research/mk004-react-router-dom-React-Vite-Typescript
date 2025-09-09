@@ -57,4 +57,10 @@ body {
       color: rgb(80, 18, 18);
     }
   }
+
+  .pageSpain {
+    h3 {
+      margin-top: 0.5rem;
+    }
+  }
 }
