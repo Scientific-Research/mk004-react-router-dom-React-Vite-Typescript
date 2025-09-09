@@ -22,7 +22,7 @@ export const PageMitte = () => {
         <Route path="brandenburgGate" element={<PageBrandenburgGate />}></Route>
         <Route path="unterDenLinden" element={<PageUnterdenLinden />}></Route>
 
-        <Route path="/" element={<Navigate to="unterDenLinden" />}></Route>
+        {/* <Route path="/" element={<Navigate to="unterDenLinden" />}></Route> */}
       </Routes>
     </>
   );

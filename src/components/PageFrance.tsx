@@ -19,7 +19,7 @@ export const PageFrance = () => {
         <Route path="bordeaux" element={<PageBordeaux />}></Route>
         <Route path="cannes" element={<PageCannes />}></Route>
 
-        <Route path="/" element={<Navigate to="paris" />}></Route>
+        {/* <Route path="/" element={<Navigate to="paris" />}></Route> */}
       </Routes>
     </>
   );

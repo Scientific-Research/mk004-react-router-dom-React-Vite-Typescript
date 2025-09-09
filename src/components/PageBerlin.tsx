@@ -19,7 +19,7 @@ export const PageBerlin = () => {
         <Route path="steglitz" element={<PageSteglitz />}></Route>
         <Route path="mitte/*" element={<PageMitte />}></Route>
 
-        <Route path="/" element={<Navigate to="mitte" />}></Route>
+        {/* <Route path="/" element={<Navigate to="mitte" />}></Route> */}
       </Routes>
     </>
   );
