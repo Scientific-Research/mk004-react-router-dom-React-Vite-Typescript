@@ -74,12 +74,42 @@ body {
 
         a {
           color: greenyellow;
-          text-decoration: none;
+          /* text-decoration: none; */
         }
       }
 
       .description {
         color: tomato;
+      }
+    }
+  }
+
+  div.city {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    color: #000;
+    text-shadow: 1px 1px 15px #666;
+
+    img {
+      box-shadow: 1px 1px 15px #666;
+    }
+    .info {
+      .name {
+        font-size: 3rem;
+      }
+      .description {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .cityChoices {
+    a {
+      text-decoration: none;
+      color: rgb(204, 166, 95);
+      &:hover {
+        color: orange;
       }
     }
   }
