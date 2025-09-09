@@ -50,4 +50,11 @@ body {
       width: 500px;
     }
   }
+
+  .page404 {
+    code {
+      background-color: #514343;
+      color: rgb(80, 18, 18);
+    }
+  }
 }
