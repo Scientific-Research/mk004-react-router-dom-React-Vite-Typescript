@@ -15,4 +15,19 @@ body {
     color: yellow;
     margin: 1rem 0;
   }
+
+  nav {
+    background-color: #222;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    a {
+      color: #aaa;
+      text-decoration: none;
+      margin-right: 1rem;
+    }
+
+    a.active {
+      color: rgb(211, 211, 110);
+    }
+  }
 }
