@@ -2,6 +2,7 @@ import { Navigate, NavLink, Route, Routes } from 'react-router-dom';
 import { PageParis } from './PageParis';
 import { PageBordeaux } from './PageBordeaux';
 import { PageCannes } from './PageCannes';
+import { Page404 } from './Page404';
 
 export const PageFrance = () => {
   return (
@@ -15,11 +16,13 @@ export const PageFrance = () => {
       </nav>
 
       <Routes>
+        {/* <Route path="/" element={<PageParis />}></Route> */}
         <Route path="paris" element={<PageParis />}></Route>
         <Route path="bordeaux" element={<PageBordeaux />}></Route>
         <Route path="cannes" element={<PageCannes />}></Route>
+        <Route path="*" element={<Page404 />}></Route>
 
-        {/* <Route path="/" element={<Navigate to="paris" />}></Route> */}
+        <Route path="/" element={<Navigate to="paris" />}></Route>
       </Routes>
     </>
   );
