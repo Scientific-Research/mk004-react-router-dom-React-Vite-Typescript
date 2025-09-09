@@ -25,7 +25,7 @@ function App() {
 
       <Routes>
         <Route path="/germany/*" element={<PageGermany />}></Route>
-        <Route path="/france" element={<PageFrance />}></Route>
+        <Route path="/france/*" element={<PageFrance />}></Route>
         <Route path="/spain" element={<PageSpain />}></Route>
         {/* <Route path="/" element={<PageGermany />}></Route> OR the following for the default page => even without replace*/}
         <Route path="/" element={<Navigate to="/france" />}></Route>
