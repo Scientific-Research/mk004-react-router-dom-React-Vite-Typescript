@@ -3,6 +3,7 @@ import { useOutletContext } from 'react-router-dom';
 interface ICitiy {
   name: string;
   description: string;
+  idCode: string;
 }
 
 export const PageCity = () => {
@@ -11,8 +12,11 @@ export const PageCity = () => {
 
   return (
     <div className="city">
-      <div className="name">{city.name}</div>
-      <div className="description">{city.description}</div>
+      <img src={`/images/${city.idCode}.png`} alt="" />
+      <div className="info">
+        <div className="name">{city.name}</div>
+        <div className="description">{city.description}</div>
+      </div>
     </div>
   );
 };

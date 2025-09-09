@@ -71,6 +71,11 @@ body {
       .name {
         margin-bottom: 0.5rem;
         color: aqua;
+
+        a {
+          color: greenyellow;
+          text-decoration: none;
+        }
       }
 
       .description {
